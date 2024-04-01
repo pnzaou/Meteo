@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: 'Roboto';
+}
+
+body{
+    background-color: skyblue;
+}
+
+main{
+    position: relative;
+}
+
+.sun {
+    position: absolute;
+    top: -50px;
+    right: 50px;
+    filter: blur(1.5px) drop-shadow(-20px -20px 60px #FFEB3B) drop-shadow(20px 20px 60px #FFEB3B);
+}
+
+.cloud-content{
+    position: relative;
+    display: flex; 
+    justify-content: space-evenly;
+    z-index: 1;
+}
+
+.cloud-content img{
+    filter: blur(.7px);
+}
+
+.weather_data{
+    color: #fff;
+    text-shadow: 1px 1px 2px rgb(119, 119, 119), -1px -1px 10px rgb(119, 119, 119);
+    font-weight: bold;
+    position: absolute;
+    top: 120px;
+    left: 70px;
+    padding: 0 100px;
+    z-index: 2;
+}
+
+.wdcontent{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 50px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+h5{
+    margin-bottom: 15px;
+}
+
+.ll{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bb{
+  display: flex;  
+}
+
+.bll{
+    padding-top: 10px;
+}
+
+.gd{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-top: 40px;
+    padding-left: 50px;
+}
+
+.prev{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.previn{
+    display: flex;
+}
