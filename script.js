@@ -19,7 +19,7 @@ Saisissez un pays, une ville...
 
 async function meteoActuelle(datainput) {
     try {
-        const reponse = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=c77b620170a24242bdd140558243103&q=${datainput}&days=4&aqi=yes&alerts=yes&lang=fr`)
+        const reponse = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=c77b620170a24242bdd140558243103&q=${datainput}&days=4&aqi=yes&alerts=yes&lang=fr`)
         var data = await reponse.json()
         const previsions = data.forecast.forecastday
         console.log(previsions)
